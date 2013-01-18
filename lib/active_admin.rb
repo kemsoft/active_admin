@@ -81,7 +81,8 @@ module ActiveAdmin
     # Returns true if this rails application has the asset
     # pipeline enabled.
     def use_asset_pipeline?
-      DependencyChecker.rails_3_1? && Rails.application.config.try(:assets).try(:enabled)
+      #DependencyChecker.rails_3_1? && Rails.application.config.try(:assets).try(:enabled)
+      false
     end
 
     # Migration MoveAdminNotesToComments generated with version 0.2.2 might reference

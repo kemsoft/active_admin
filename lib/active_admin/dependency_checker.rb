@@ -16,8 +16,8 @@ module ActiveAdmin
       end
 
       def rails_3_1?
-        #Rails::VERSION::MAJOR == 3 && Rails::VERSION::MINOR >= 1
-        false
+        Rails::VERSION::MAJOR == 3 && Rails::VERSION::MINOR >= 1
+    
       end
 
       def meta_search_1_1?
